@@ -4,7 +4,7 @@ LABEL authors="SHYAM"
 ENTRYPOINT ["top", "-b"]
 # Stage 1: Build the application using Maven
 # Use the appropriate base image for your Java version (e.g., openjdk:17)
-FROM maven:3.8.5-openjdk-17 AS build
+FROM maven:3.9.8-eclipse-temurin-24 AS build
 
 WORKDIR /app
 
